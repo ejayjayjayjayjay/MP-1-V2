@@ -217,29 +217,34 @@
                         <label class="form-label">Vehicle Mileage:</label>
                         <input type="text" class="form-control" placeholder="51.248" required>
                     </div>
+
+                    <fieldset> <!--The last-of-type target the border bottom of the fieldset-->
+                        Select Services Needed:
+                        <select class="form-select" name="referrer" required>
+                            <option value="">(select one)</option> <!-- this will just be empty-->
+                            <option value="1">Oil Change</option>
+                            <option value="2">Tire Vulcanize</option>
+                            <option value="3">Brakes</option>
+                            <option value="4">Car Paints</option>
+                        </select>
+                        </label>
+
+                        <div class="mb-3">
+                            <label class="form-label">Schedule Date of Service:</label><input class="form-control" type="date" required/>
+                        </div>
+
+                        <label>
+                            Your Message:
+                            <textarea class="form-control d-inline" name="bio" id="" cols="30" rows="3"
+                                placeholder="Please input here." required></textarea>
+                        </label>
+                    </fieldset>
             
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Please email me Updates:</label>
                         <input type="checkbox" required>
                     </div>
             
-                </fieldset>
-            
-                <fieldset> <!--The last-of-type target the border bottom of the fieldset-->
-                    Select Services Needed:
-                    <select class="form-select" name="referrer" required>
-                        <option value="">(select one)</option> <!-- this will just be empty-->
-                        <option value="1">Oil Change</option>
-                        <option value="2">Tire Vulcanize</option>
-                        <option value="3">Brakes</option>
-                        <option value="4">Car Paints</option>
-                    </select>
-                    </label>
-                    <label>
-                        Your Message:
-                        <textarea class="form-control d-inline" name="bio" id="" cols="30" rows="3"
-                            placeholder="Please input here." required></textarea>
-                    </label>
                 </fieldset>
             
                 <label class="terms_style d-flex justify-content-center">

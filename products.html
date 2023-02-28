@@ -87,7 +87,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -107,7 +107,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -128,7 +128,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -149,7 +149,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -170,7 +170,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -191,7 +191,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -212,7 +212,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -233,7 +233,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
                 <div class="product_img col-md-2">
@@ -254,7 +254,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="buy">
-                        <button>Inquire Now</button>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#inquireForm">INQUIRE NOW</button>
                     </div>
                 </div>
             </div>
@@ -264,10 +264,90 @@
 </section>
      <!-- PRODUCT PAGE END -->
 
+     <!-- The Modal (Pop-up) START -->
 
+ <div class="modal fade" id="inquireForm">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-center">
+                <h3 class="modal-title fw-bold">PRODUCT ORDER FORM</h3>
+            </div>
+            <div class="modal-body">
+                <section class="forms" id="forms_page">
+            <form action="/thankYouPage.html" class="form-control bg-warning mt-2 mb-3 form-child">
+                <div class="wrap_top">
+                    <p class="text-muted text-center">Here at Aria V Tire Trading, we understand that estimate can be a
+                        big determining factor when deciding your next move.
+                        By completing and submitting our custom estimate contact form, we are able to provide you with a
+                        general calculation on cost and repair fees.</p>
+                </div>
+                <!-- First name,last name,email and password field -->
+                <fieldset>
+                    <div class="mb-3">
+                        <label class="form-label">Enter your first name:</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label">Enter your last name:</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label">Email address:</label>
+                        <input type="email" class="form-control" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label">Enter your phone number:</label>
+                        <input type="tel" class="form-control" pattern="[0-9]{11}" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label">Purchase Order:</label>
+                        <input type="text" class="form-control" placeholder="Items" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Date of pick-up:</label><input class="form-control" type="date" required/>
+                    </div>
 
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Please email me Updates:</label>
+                        <input type="checkbox" required>
+                    </div>
+            
+                </fieldset>
+            
+                <fieldset>
+                    <label>
+                        Your Message:
+                        <textarea class="form-control d-inline" name="bio" id="" cols="30" rows="3"
+                            placeholder="Please input here." required></textarea>
+                    </label>
+                </fieldset>
+            
+                <label class="terms_style d-flex justify-content-center">
+                    <input class="terms my-1 mx-1" type="checkbox" name="termsConditions" required /> I Agree to the <a class="px-1"
+                        href="#">terms and conditions</a>
+                </label>
+                <div class="container d-flex justify-content-center">
+                    <div class="row">
+                        <button type="submit" class="btn_forms btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
 
-
+<!-- The Modal (Pop-up) END -->
 
 
   <!-- FOOTER SECTION START -->
@@ -361,6 +441,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- modal js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!-- AOS JS LINK -->
 
