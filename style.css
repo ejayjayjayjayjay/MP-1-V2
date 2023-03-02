@@ -306,6 +306,12 @@ body{
    /*  font-size: 2vw; */
 }
 
+@media screen and (max-width: 600px) {
+    .services-text p {
+      font-size: 2vw;
+    }
+  }
+
 /* .card-img-top {
     height: 200px;
     width: 100%;
