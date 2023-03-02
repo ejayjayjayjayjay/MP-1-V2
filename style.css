@@ -108,7 +108,7 @@ body{
     width: 10em;
     border: none;
     outline: none;
-    background-color: #4681f4;
+    background-color: #1b2741;
     color: white;
     font-weight: 700;
     border-radius: 60px;
@@ -268,7 +268,7 @@ body{
     padding: 10px 20px;
     border-radius: 7px;
     border: none;
-    background-color: #1b2741;
+    background-color: #ffcd39;
     color: #fff;
     font-size: 18px;
     text-transform: capitalize;
